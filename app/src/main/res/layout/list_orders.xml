@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/list_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASAP"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 MIN"
+            android:textAllCaps="true"
+            android:textColor="@color/green"
+            android:textSize="10dp"
+            android:id="@+id/time"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELIVERY"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DY3 INF"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:id="@+id/delivery"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:id="@+id/paymenttype"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="£15.29"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:id="@+id/amounts"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/accept_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/accepttext"
+            android:text="Accept"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

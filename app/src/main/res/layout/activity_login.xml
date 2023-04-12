@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/orange">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="4Season"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Email *"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:background="@drawable/edit_text"
+            android:drawableRight="@drawable/email_ico"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Password *"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:background="@drawable/edit_text"
+            android:drawableRight="@drawable/password_ico"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"
+            android:id="@+id/password"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:buttonTint="@color/grey"
+                android:id="@+id/remember"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Password"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_login"
+            android:id="@+id/login"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Force Login"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_login"
+            android:id="@+id/force_login"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
